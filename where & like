@@ -1,0 +1,11 @@
+-- WHERE: find user by ID
+SELECT * FROM users WHERE id = 2;
+
+-- LIKE: find names starting with 'A'
+SELECT * FROM users WHERE name LIKE 'A%';
+
+-- LIKE: find emails ending with 'mail.com'
+SELECT * FROM users WHERE email LIKE '%mail.com';
+
+-- LIKE: names with 'o' in them
+SELECT * FROM users WHERE name LIKE '%o%';
