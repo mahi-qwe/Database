@@ -1,0 +1,7 @@
+BEGIN;  -- Start transaction
+
+UPDATE accounts SET balance = balance - 500 WHERE id = 1; -- deduct from A
+UPDATE accounts SET balance = balance + 500 WHERE id = 2; -- add to B
+
+COMMIT; -- Finish transaction
+ROLLBACK;  -- undo all changes
