@@ -1,0 +1,11 @@
+-- Insert sample data
+INSERT INTO users (name, email) VALUES
+('Alice', 'alice@mail.com'),
+('Bob', 'bob@mail.com'),
+('Carol', 'carol@mail.com');
+
+-- Create index on email
+CREATE INDEX idx_users_email ON users(email);
+
+-- Query: Find user by email
+SELECT * FROM users WHERE email = 'bob@mail.com';
